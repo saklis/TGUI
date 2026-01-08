@@ -187,7 +187,7 @@ namespace tgui
 
     void BackendSFML::setClipboard(const String& contents)
     {
-        sf::Clipboard::setString(sf::String(contents));
+        sf::Clipboard::setString(sf::String(contents.toStdString()));
     }
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
